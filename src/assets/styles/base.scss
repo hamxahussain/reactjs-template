@@ -1,0 +1,95 @@
+/* ===================================================================
+ *  01. Top Level Imports
+ * ------------------------------------------------------------------- */
+@import "./variables";
+@import "./font";
+
+/* ===================================================================
+ *  02. Complete Reset
+ * ------------------------------------------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-family: "text-r" sans-serif;
+	scroll-behavior: smooth;
+	-webkit-tap-highlight-color: transparent;
+}
+body {
+	font-weight: normal;
+	background-color: #fff;
+	line-height: 1;
+	text-rendering: optimizeLegibility;
+	word-wrap: break-word;
+	-webkit-overflow-scrolling: touch;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+	font-family: "text-r";
+}
+button {
+	overflow: visible;
+	outline: none;
+	transition: all 0.2s ease-in-out 0s;
+	text-align: center;
+	font-family: text-sb;
+}
+button,
+select {
+	font-family: "text-r" sans-serif;
+	text-transform: none;
+	cursor: pointer;
+}
+input {
+	line-height: normal;
+	font-family: "text-r" sans-serif;
+	outline: none;
+}
+textarea {
+	overflow: auto;
+	font-family: "text-r" sans-serif;
+	outline: none;
+}
+a {
+	color: rgb(35, 94, 243);
+}
+a:hover {
+	text-decoration-line: underline;
+}
+
+/* ===================================================================
+ *  03. Most usable classes
+ * ------------------------------------------------------------------- */
+.img-disable-select {
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	pointer-events: none;
+}
+.no-select {
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	pointer-events: none;
+}
+.cursor-pointer {
+	cursor: pointer;
+}
+
+/* ===================================================================
+ *  04. Low Level Imports
+ * ------------------------------------------------------------------- */
+// =============================  Component - Public  =============================
+
+// =============================  Component - Utility  =============================
+@import "../../components/utility/resources/TabBar/tabbar";
+@import "../../components/utility/resources/TopBar/topbar";
+
+// =============================  SUB Component - Pages  =============================
+
+// =============================  Pages - Static  =============================
+@import "../../pages/Home/home";
